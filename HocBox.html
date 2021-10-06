@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc Box</title>
+    <style type ="text/css">
+        .borderdiv{
+            border : inset ;
+            text-align : justify,
+        }
+        .alert{
+            padding: 5px;
+            background-color: grey; 
+            color: white;
+            margin-bottom: 15px;
+        }
+        .closebtn{
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "borderdiv">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.parentElement.style.display = 'none';">
+                <img src="ic_close.png" width="20px" height="20px"/>
+            </span>
+                Khoa Hệ thống thông tin
+        </div>
+        Khoa Hệ Thống Thông Tin thuộc Trường Đại học Kinh Tế - Luật là cơ sở đào tạo đại học, sau đại học, nghiên cứu khoa học và công nghệ trong lĩnh vực Tin học- Kinh tế, Hệ thống thông tin quản lý, Thương mại điện tử theo tiêu chí chất lượng cao…
+    </div>
+</body>
+</html>
