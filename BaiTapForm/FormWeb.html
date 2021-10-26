@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Form đăng ký</title>
+    <style>
+        td {
+            font-weight: bold;
+        }
+        
+        li {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <h2 style="text-align: center; background-color: rgb(26, 26, 105); color: white">.:ĐĂNG KÝ NGƯỜI DÙNG:.</h2>
+        <hr />
+        <table align="center">
+            <tr>
+                <td style="text-align:right">
+                    <label>Tên đăng nhập: </label>
+                </td>
+                <td>
+                    <input name="nameLogin" type="text" value="" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Mật khẩu: </label>
+                </td>
+                <td>
+                    <input name="password1" type="password" value="" required />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-style:italic; font-weight: normal;">(Tối thiểu 5 ký tự)</td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Gõ lại mật khẩu: </label>
+                </td>
+                <td>
+                    <input name="password2" type="password" value="" required />
+                </td>
+            </tr>
+
+        </table>
+        <hr />
+        <h3 style="font-style: italic;">:: Nhập thông tin để lấy lại mật khẩu khi quên</h3>
+        <table align="center">
+            <tr>
+                <td style="text-align:right">
+                    <label>Câu hỏi bí mật: </label>
+                </td>
+                <td>
+                    <select>
+                        <option value="">[Chọn câu hỏi]</option>
+                        <option value="c1">Câu hỏi 1</option>
+                        <option value="c2">Câu hỏi 2</option>
+                        <option value="c3">Câu hỏi 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Trả lời: </label>
+                </td>
+                <td>
+                    <input name="answer" type="text" value="" />
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <h3 style="font-style: italic;">:: Thông tin cá nhân</h3>
+
+
+        <table align="center">
+            <tr>
+                <td style="text-align:right">
+                    <label>Họ và chữ lót: </label>
+                </td>
+                <td>
+                    <input name="userName" type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Tên: </label>
+                </td>
+                <td>
+                    <input name="Name" type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Ngày sinh: </label>
+                </td>
+                <td>
+                    <select name="month">
+                        <option value=""></option>
+                        <option value="thang1">Tháng 01</option>
+                        <option value="thang2">Tháng 02</option>
+                        <option value="thang3">Tháng 03</option>
+                        <option value="thang4">Tháng 04</option>
+                        <option value="thang5">Tháng 05</option>
+                        <option value="thang6">Tháng 06</option>
+                        <option value="thang7">Tháng 07</option>
+                        <option value="thang8">Tháng 08</option>
+                        <option value="thang9">Tháng 09</option>
+                        <option value="thang10">Tháng 10</option>
+                        <option value="thang11">Tháng 11</option>
+                        <option value="thang12">Tháng 12</option>
+                    </select>,
+                    <input name="day" type="text" value="" />,
+                    <input name="year" type="text" value="" /> (Month,DD,YYYY)
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Giới tính: </label>
+                </td>
+                <td>
+                    <input name="gioitinh" type="radio" value="nam" checked="checked" />Nam
+                    <input name="gioitinh" type="radio" value="nu" />Nữ
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right">
+                    <label>Nghề nghiệp liên quan: </label>
+                </td>
+                <td>
+                    <select>
+                        <option value="">[Chọn nghề nghiệp]</option>
+                        <option value="n1">Nghề 1</option>
+                        <option value="n1">Nghề 2</option>
+                        <option value="n1">Nghề 3</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <hr />
+
+        <h3 style="font-style: italic;">:: Sở thích (tùy chọn)</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" name=" " value="" /> <b>Âm nhạc</b>
+                </td>
+                <td>
+                    <input type="checkbox" name="" value="" /> <b>Du lịch</b> <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name=" " value="" /> <b>Nghiên cứu</b>
+                </td>
+                <td>
+                    <input type="checkbox" name="" value="" /> <b>Kinh doanh</b>
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <div style="text-align: center">
+            <input name="register" type="submit" value="Đăng kí" />
+            <input name="delete" type="reset" value="Xóa" />
+        </div>
+    </form>
+</body>
+
+</html>
